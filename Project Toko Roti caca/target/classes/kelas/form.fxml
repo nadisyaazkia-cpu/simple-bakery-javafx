@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane style="-fx-background-color: BD5579;" stylesheets="@styles/app.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelas.controller.FormController">
+    <top>
+        <HBox spacing="16" styleClass="header">
+            <Label styleClass="title" text="Tambah Produk Toko" />
+            <Button onAction="#bukaDaftar" style="-fx-background-color: FFEBB8;" text="Lihat Daftar Produk" />
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true">
+            <content>
+                <VBox spacing="16" styleClass="page">
+                    <VBox spacing="12" styleClass="card">
+                        <Label styleClass="subtitle" text="Rotibychacha's Admin Properties" />
+                  <Label styleClass="subtitle" text="Buat produk baru" />
+                        
+                        <Label text="Nama Produk" />
+                        <TextField fx:id="namaField" promptText="Contoh: Roti Tawar" />
+                        
+                        <Label text="Kategori" />
+                        <ComboBox fx:id="kategoriBox" maxWidth="Infinity" />
+                        
+                        <Label text="Harga Produk (Rp)" />
+                        <TextField fx:id="hargaField" promptText="Contoh: 15000" />
+                        
+                        <!-- TAMBAHAN ELEMEN GAMBAR DI SINI -->
+                        <Label text="Gambar Produk" />
+                        <Button maxWidth="Infinity" onAction="#pilihGambar" text="Pilih Gambar dari Laptop..." />
+                        <ImageView fx:id="gambarView" fitHeight="28.0" fitWidth="85.0" preserveRatio="true" />
+                        
+                        <Button maxWidth="Infinity" onAction="#simpan" styleClass="button-primary" text="Simpan Produk" />
+                        <Label fx:id="pesanLabel" styleClass="error" wrapText="true" />
+                    </VBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

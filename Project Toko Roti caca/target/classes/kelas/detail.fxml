@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: BD5579;" stylesheets="@styles/app.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelas.controller.DetailController">
+    <top>
+        <HBox spacing="16" styleClass="header">
+            <Label styleClass="title" text="Detail Produk">
+            <font>
+               <Font name="Bank Gothic Medium BT" size="15.0" />
+            </font></Label>
+         <Label styleClass="title" text="RotibyChacha">
+            <font>
+               <Font name="Bank Gothic Medium BT" size="15.0" />
+            </font>
+         </Label>
+            <Button onAction="#bukaDaftar" text="Lihat Daftar" />
+        </HBox>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true" style="-fx-background-position: FFEBB8;">
+            <content>
+                <VBox spacing="16" styleClass="page">
+                    <VBox spacing="10" styleClass="card">
+                        <ImageView fx:id="gambarView" fitHeight="220" fitWidth="320" preserveRatio="true" />
+
+                        <Label styleClass="muted" text="Kode Produk" />
+                        <Label fx:id="kodeLabel" styleClass="subtitle" />
+
+                        <Label styleClass="muted" text="Nama Produk" />
+                        <Label fx:id="namaLabel" wrapText="true" />
+
+                        <Label styleClass="muted" text="Kategori" />
+                        <Label fx:id="kategoriLabel" />
+
+                        <Label styleClass="muted" text="Harga" />
+                        <Label fx:id="hargaLabel" styleClass="title" />
+
+                        <Button onAction="#bukaDaftar" styleClass="button-primary" text="Kembali ke Daftar Produk" />
+                    </VBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

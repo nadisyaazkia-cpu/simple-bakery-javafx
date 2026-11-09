@@ -1,0 +1,59 @@
+.root {
+    -fx-font-family: "Fredoka";
+    -fx-font-size: 14px;
+    -fx-background-color: #7C0E44;
+}
+.header {
+    -fx-padding: 20 24;
+    -fx-background-color: white;
+    -fx-alignment: center-left;
+}
+.page {
+    -fx-padding: 24;
+}
+.card {
+    -fx-background-color: #F2DACE;
+    -fx-background-radius: 14;
+    -fx-padding: 24;
+}
+.title {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #18334d;
+}
+.subtitle {
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+}
+.muted {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+.error {
+    -fx-text-fill: #b91c1c;
+}
+.button {
+    -fx-padding: 10 16;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+.button-primary {
+    -fx-background-color: #AA5E7A;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.button-primary:hover {
+    -fx-background-color: #AA5E7A;
+}
+.text-field, .combo-box {
+    -fx-background-radius: 7;
+    -fx-padding: 9;
+}
+.scroll-pane, .scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.table-view {
+    -fx-background-color: #D49A9A;
+    -fx-border-color: #7C0E44;
+}
